@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e => hljs.highlightBlock(e)); });</script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e => { const anim = lottie.loadAnimation({ container: e, renderer: 'svg', loop: true, autoplay: true, path: e.getAttribute('data-source') }); anim.addEventListener('data_failed', () => e.innerHTML = '<strong>[Sticker cannot be rendered]</strong>'); }); });</script>
+    <script>function scrollToMessage(event, id) {
+            const element = document.getElementById('chatlog__message-container-' + id); if (!element)
+                return; event.preventDefault(); element.classList.add('chatlog__message-container--highlighted'); window.scrollTo({ top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - (window.innerHeight / 2), behavior: 'smooth' }); window.setTimeout(() => element.classList.remove('chatlog__message-container--highlighted'), 2000);
+        }
+        function showSpoiler(event, element) {
+            if (!element)
+                return; if (element.classList.contains('chatlog__attachment--hidden')) { event.preventDefault(); element.classList.remove('chatlog__attachment--hidden'); }
+            if (element.classList.contains('chatlog__markdown-spoiler--hidden')) { event.preventDefault(); element.classList.remove('chatlog__markdown-spoiler--hidden'); }
+        }
+    </script>
+
+</head>
+<body>
+    <svg style=display:none xmlns=http://www.w3.org/2000/svg>
+        <defs>
+            <symbol id=attachment-icon viewBox="0 0 720 960">
+                <path fill=#f4f5fb
+                    d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z />
+                <path fill=#7789c4
+                    d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z />
+                <path fill=#f4f5fb
+                    d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z />
+                <path fill=#7789c4
+                    d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z />
+            </symbol>
+            <symbol id=channel-pinned-message-icon viewBox="0 0 18 18">
+                <path fill=#b9bbbe
+                    d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" />
+            </symbol>
+            <symbol id=call-icon viewBox="0 0 18 18">
+                <path fill=#3ba55c fill-rule=evenodd
+                    d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" />
+            </symbol>
+            <symbol id=guild-member-join-icon viewBox="0 0 18 18">
+                <path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" />
+            </symbol>
+        </defs>
+    </svg>
+
+     <div class=preamble>
+        <div class=preamble__guild-icon-container><img class=preamble__guild-icon
+                src="Example guild - Text Channels - general [1012224565567721552].json_Files\0-EB806.png"
+                alt="Guild icon" loading=lazy
+                height="200px"
+                width="200px">
+            </img></div>
+        <div class=preamble__entries-container>
+            <div class=preamble__entry>Example guild</div>
+            <div class=preamble__entry>Text Channels / chill talk</div>
+            <div class="preamble__entry preamble__entry--small">chill talk</div>
+        </div>
+    </div>
+    <div class="chatlog">
+
+<div id="chatlog__message-container-1060953753550860429" class="chatlog__message-container " data-message-id="1060953753550860429">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:11">16:11</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060953753550860429">06-Jan-23 04:11 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">It&#x27;s a little cold in here 🥶</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060953780281167924" class="chatlog__message-container " data-message-id="1060953780281167924">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\90eac3a7ee39906829377a0e43403f0-0E126.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:11">16:11</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Patrick" data-user-id="627848643557663699">Patrick</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060953780281167924">06-Jan-23 04:11 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Yeah, it&#x27;s winter :thisisfine:</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060954094627463098" class="chatlog__message-container " data-message-id="1060954094627463098">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\41ffe1a8ee39906828367a0e42541e1-0F999.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:11">16:11</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="aLittleSpammyBot" data-user-id="521486476985321458">RICK NITRO</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060954094627463098">06-Jan-23 04:11 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Free nitro giveaway! <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a></span>
+                    
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__embed">
+                <div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div>
+                <div class="chatlog__embed-content-container">
+                    <div class="chatlog__embed-content">
+                        <div class="chatlog__embed-text">
+                            
+                            <div class="chatlog__embed-author-container">
+                                <img class="chatlog__embed-author-icon" src="" alt="Author icon" loading="lazy"onerror="this.style.visibility='hidden'" width="16" height="16">
+                                
+                                <a class="chatlog__embed-author-link" href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw">
+                                    <div class="chatlog__embed-author">Rick Nitro</div>
+                                </a>
+
+                            </div>
+
+                            
+                            <div class="chatlog__embed-title">
+                                
+                                <a class="chatlog__embed-title-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                    <div class="chatlog__markdown chatlog__markdown-preserve">Rick Nitro - Never Gonna Give It Away (Official Music Video)</div>
+                                </a>
+
+                            </div>
+
+                            <div class="chatlog__embed-youtube-container">
+                                <iframe class="chatlog__embed-youtube" src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="400" height="225"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060954094627463198" class="chatlog__message-container " data-message-id="1060954094627463198">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            <div class="chatlog__reference-symbol"></div>
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:12">16:12</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+            <div class="chatlog__reference">
+
+                
+                <img class="chatlog__reference-avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\41ffe1a8ee39906828367a0e42541e1-0F999.png" alt="Avatar" loading="lazy" onerror="this.style.visibility='hidden'" width="16" height="16">
+                <div class="chatlog__reference-author" style="color:None;" title="aLittleSpammyBot">RICK NITRO</div>
+                <div class="chatlog__reference-content">
+                    <span class="chatlog__reference-link" onclick="scrollToMessage(event, '1060954094627463098')">
+                        Free nitro giveaway! <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>
+                    </span>
+                    
+                </div>
+
+              
+            </div>
+
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060954094627463198">06-Jan-23 04:12 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">@Adam delete this please</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060954391009570826" class="chatlog__message-container " data-message-id="1060954391009570826">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:13">16:13</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060954391009570826">06-Jan-23 04:13 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Done</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060954419862188072" class="chatlog__message-container " data-message-id="1060954419862188072">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:14">16:14</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060954419862188072">06-Jan-23 04:14 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">:pepeheart: :pepeheart: :pepeheart:</span>
+                    <span class="chatlog__edited-timestamp" title="12-Jan-23 04:14 PM">(edited)</span>
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</body>
+</html>

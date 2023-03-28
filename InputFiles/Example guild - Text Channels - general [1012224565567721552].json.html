@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e => hljs.highlightBlock(e)); });</script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.8.1/lottie.min.js></script>
+    <script>document.addEventListener('DOMContentLoaded', () => { document.querySelectorAll('.chatlog__sticker--media[data-source]').forEach(e => { const anim = lottie.loadAnimation({ container: e, renderer: 'svg', loop: true, autoplay: true, path: e.getAttribute('data-source') }); anim.addEventListener('data_failed', () => e.innerHTML = '<strong>[Sticker cannot be rendered]</strong>'); }); });</script>
+    <script>function scrollToMessage(event, id) {
+            const element = document.getElementById('chatlog__message-container-' + id); if (!element)
+                return; event.preventDefault(); element.classList.add('chatlog__message-container--highlighted'); window.scrollTo({ top: element.getBoundingClientRect().top - document.body.getBoundingClientRect().top - (window.innerHeight / 2), behavior: 'smooth' }); window.setTimeout(() => element.classList.remove('chatlog__message-container--highlighted'), 2000);
+        }
+        function showSpoiler(event, element) {
+            if (!element)
+                return; if (element.classList.contains('chatlog__attachment--hidden')) { event.preventDefault(); element.classList.remove('chatlog__attachment--hidden'); }
+            if (element.classList.contains('chatlog__markdown-spoiler--hidden')) { event.preventDefault(); element.classList.remove('chatlog__markdown-spoiler--hidden'); }
+        }
+    </script>
+
+</head>
+<body>
+    <svg style=display:none xmlns=http://www.w3.org/2000/svg>
+        <defs>
+            <symbol id=attachment-icon viewBox="0 0 720 960">
+                <path fill=#f4f5fb
+                    d=M50,935a25,25,0,0,1-25-25V50A25,25,0,0,1,50,25H519.6L695,201.32V910a25,25,0,0,1-25,25Z />
+                <path fill=#7789c4
+                    d=M509.21,50,670,211.63V910H50V50H509.21M530,0H50A50,50,0,0,0,0,50V910a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50h0V191Z />
+                <path fill=#f4f5fb
+                    d=M530,215a25,25,0,0,1-25-25V50a25,25,0,0,1,16.23-23.41L693.41,198.77A25,25,0,0,1,670,215Z />
+                <path fill=#7789c4
+                    d=M530,70.71,649.29,190H530V70.71M530,0a50,50,0,0,0-50,50V190a50,50,0,0,0,50,50H670a50,50,0,0,0,50-50Z />
+            </symbol>
+            <symbol id=channel-pinned-message-icon viewBox="0 0 18 18">
+                <path fill=#b9bbbe
+                    d="m16.908 8.39684-8.29587-8.295827-1.18584 1.184157 1.18584 1.18584-4.14834 4.1475v.00167l-1.18583-1.18583-1.185 1.18583 3.55583 3.55502-4.740831 4.74 1.185001 1.185 4.74083-4.74 3.55581 3.555 1.185-1.185-1.185-1.185 4.1475-4.14836h.0009l1.185 1.185z" />
+            </symbol>
+            <symbol id=call-icon viewBox="0 0 18 18">
+                <path fill=#3ba55c fill-rule=evenodd
+                    d="M17.7163041 15.36645368c-.0190957.02699568-1.9039523 2.6680735-2.9957762 2.63320406-3.0676659-.09785935-6.6733809-3.07188394-9.15694343-5.548738C3.08002193 9.9740657.09772497 6.3791404 0 3.3061316v-.024746C0 2.2060575 2.61386252.3152347 2.64082114.2972376c.7110335-.4971705 1.4917101-.3149497 1.80959713.1372281.19320342.2744561 2.19712724 3.2811005 2.42290565 3.6489167.09884826.1608492.14714912.3554431.14714912.5702838 0 .2744561-.07975258.5770327-.23701117.8751101-.1527655.2902036-.65262318 1.1664385-.89862055 1.594995.2673396.3768148.94804468 1.26429792 2.351016 2.66357424 1.39173858 1.39027775 2.28923588 2.07641807 2.67002628 2.34187563.4302146-.2452108 1.3086162-.74238132 1.5972981-.89423205.5447887-.28682915 1.0907006-.31944893 1.4568885-.08661115.3459689.2182151 3.3383754 2.21027167 3.6225641 2.41611376.2695862.19234426.4144887.5399137.4144887.91672846 0 .2969525-.089862.61190215-.2808189.88523346" />
+            </symbol>
+            <symbol id=guild-member-join-icon viewBox="0 0 18 18">
+                <path fill=#3ba55c d="m0 8h14.2l-3.6-3.6 1.4-1.4 6 6-6 6-1.4-1.4 3.6-3.6h-14.2" />
+            </symbol>
+        </defs>
+    </svg>
+
+     <div class=preamble>
+        <div class=preamble__guild-icon-container><img class=preamble__guild-icon
+                src="Example guild - Text Channels - general [1012224565567721552].json_Files\0-EB806.png"
+                alt="Guild icon" loading=lazy
+                height="200px"
+                width="200px">
+            </img></div>
+        <div class=preamble__entries-container>
+            <div class=preamble__entry>Example guild</div>
+            <div class=preamble__entry>Text Channels / general</div>
+            <div class="preamble__entry preamble__entry--small">general</div>
+        </div>
+    </div>
+    <div class="chatlog">
+
+<div id="chatlog__message-container-1045178587575242772" class="chatlog__message-container " data-message-id="1045178587575242772">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:03">14:03</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1045178587575242772">06-Jan-23 02:03 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Welcome to the <strong>DiscordChatExporter-frontend</strong> example!</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1045178587575242785" class="chatlog__message-container " data-message-id="1045178587575242785">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:12">14:12</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1045178587575242785">06-Jan-23 02:12 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Joined the server.</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1045178587575242788" class="chatlog__message-container " data-message-id="1045178587575242788">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\90eac3a7ee39906829377a0e43403f0-0E126.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:12">14:12</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Patrick" data-user-id="627848643557663699">Patrick</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1045178587575242788">06-Jan-23 02:12 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Joined the server.</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1045179638760091709" class="chatlog__message-container " data-message-id="1045179638760091709">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:18">14:18</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1045179638760091709">06-Jan-23 02:18 PM</a></span>
+            </div>
+
+
+            
+
+            
+
+            
+
+            
+            <div class="chatlog__sticker" title="pepecute">
+                <img class="chatlog__sticker--media" src="Example guild - Text Channels - general [1012224565567721552].json_Files\1045179611115421738-47841.png" alt="Sticker">
+            </div>
+
+
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926197556588725" class="chatlog__message-container " data-message-id="1060926197556588725">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:21">14:21</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926197556588725">06-Jan-23 02:21 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Hello 👏</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926221136973825" class="chatlog__message-container " data-message-id="1060926221136973825">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926221136973825">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">everybody here?</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926239034064967" class="chatlog__message-container " data-message-id="1060926239034064967">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926239034064967">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Yes</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926254683017306" class="chatlog__message-container " data-message-id="1060926254683017306">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926254683017306">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Good 👍</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926274924728411" class="chatlog__message-container " data-message-id="1060926274924728411">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926274924728411">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">I think we can start a fake conversation then</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926297053859890" class="chatlog__message-container " data-message-id="1060926297053859890">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926297053859890">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve"><strong>DiscordChatExporter-frontend</strong> is your offline copy of Discord. A place for your memories!</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926317920538735" class="chatlog__message-container " data-message-id="1060926317920538735">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926317920538735">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">How so? We are chatting online now</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926346089476176" class="chatlog__message-container " data-message-id="1060926346089476176">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926346089476176">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">You will understand it later :kekw:</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+                <div class="chatlog__reaction" title="👀">
+                    <img class="chatlog__emoji chatlog__emoji--small" alt="👀" src="Example guild - Text Channels - general [1012224565567721552].json_Files\1f440-1DC0B.svg" loading="lazy">
+                    <span class="chatlog__reaction-count">1</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926395313827840" class="chatlog__message-container " data-message-id="1060926395313827840">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\90eac3a7ee39906829377a0e43403f0-0E126.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:22">14:22</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Patrick" data-user-id="627848643557663699">Patrick</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926395313827840">06-Jan-23 02:22 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">How do I get started?</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926487911485582" class="chatlog__message-container " data-message-id="1060926487911485582">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:23">14:23</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926487911485582">06-Jan-23 02:23 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">1. Use DiscordChatExporter to export Discord chat. Don&#x27;t forget to choose <s>HTML</s> <strong>JSON</strong> format. I also highly recommend to also export assets if you want the true <u>offline</u> experience :thisisfine:</span>
+                    <span class="chatlog__edited-timestamp" title="06-Jan-23 02:23 PM">(edited)</span>
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926845832409158" class="chatlog__message-container " data-message-id="1060926845832409158">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:24">14:24</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926845832409158">06-Jan-23 02:24 PM</a></span>
+            </div>
+
+
+            
+
+            
+                <div class="chatlog__attachment " >
+                    
+                    <a href="Example guild - Text Channels - general [1012224565567721552].json_Files\dce-export-more-662EF.png">
+                        <img class="chatlog__attachment-media" src="Example guild - Text Channels - general [1012224565567721552].json_Files\dce-export-more-662EF.png" alt="Image attachment" title="Image: dce-export-more.png (42900 Bytes)" loading="lazy">
+                    </a>
+
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926895719460986" class="chatlog__message-container " data-message-id="1060926895719460986">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:24">14:24</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926895719460986">06-Jan-23 02:24 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">read more about DiscordChatExporter in the wiki <a href="https://github.com/Tyrrrz/DiscordChatExporter/wiki">https://github.com/Tyrrrz/DiscordChatExporter/wiki</a></span>
+                    
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__embed">
+                <div class="chatlog__embed-color-pill" style="background-color: #1E2327"></div>
+                <div class="chatlog__embed-content-container">
+                    <div class="chatlog__embed-content">
+                        <div class="chatlog__embed-text">
+                            
+                            
+                            <div class="chatlog__embed-title">
+                                
+                                <a class="chatlog__embed-title-link" href="https://github.com/Tyrrrz/DiscordChatExporter/wiki">
+                                    <div class="chatlog__markdown chatlog__markdown-preserve">Home · Tyrrrz/DiscordChatExporter Wiki</div>
+                                </a>
+
+                            </div>
+
+                            
+                            <div class="chatlog__embed-description">
+                                <div class="chatlog__markdown chatlog__markdown-preserve">Exports Discord chat logs to a file. Contribute to Tyrrrz/DiscordChatExporter development by creating an account on GitHub.</div>
+                            </div>
+
+                            <div class="chatlog__embed-fields">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="chatlog__embed-thumbnail-container">
+                            <a class="chatlog__embed-thumbnail-link" href="Example guild - Text Channels - general [1012224565567721552].json_Files\DiscordChatExporter-263B5">
+                                <img class="chatlog__embed-thumbnail" src="Example guild - Text Channels - general [1012224565567721552].json_Files\DiscordChatExporter-263B5" alt="Thumbnail" loading="lazy">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="chatlog__embed-images ">
+                        
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060926971418251355" class="chatlog__message-container " data-message-id="1060926971418251355">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:25">14:25</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060926971418251355">06-Jan-23 02:25 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">2. Then move your exports to the exports folder</span>
+                    
+                </div>
+
+
+            
+                <div class="chatlog__attachment " >
+                    
+                    <a href="Example guild - Text Channels - general [1012224565567721552].json_Files\tutorial_move_to_exports_folder-74E3F.png">
+                        <img class="chatlog__attachment-media" src="Example guild - Text Channels - general [1012224565567721552].json_Files\tutorial_move_to_exports_folder-74E3F.png" alt="Image attachment" title="Image: tutorial_move_to_exports_folder.png (22047 Bytes)" loading="lazy">
+                    </a>
+
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927032445370408" class="chatlog__message-container " data-message-id="1060927032445370408">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:25">14:25</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927032445370408">06-Jan-23 02:25 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">3. close all &quot;black boxes&quot; named nginx if they are opened</span>
+                    
+                </div>
+
+
+            
+                <div class="chatlog__attachment " >
+                    
+                    <a href="Example guild - Text Channels - general [1012224565567721552].json_Files\tutorial_close_nginx-8F439.png">
+                        <img class="chatlog__attachment-media" src="Example guild - Text Channels - general [1012224565567721552].json_Files\tutorial_close_nginx-8F439.png" alt="Image attachment" title="Image: tutorial_close_nginx.png (4824 Bytes)" loading="lazy">
+                    </a>
+
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927084425392240" class="chatlog__message-container " data-message-id="1060927084425392240">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:25">14:25</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927084425392240">06-Jan-23 02:25 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">4. And run <code class="chatlog__markdown-pre chatlog__markdown-pre--inline">START_VIEWER</code> again</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+                <div class="chatlog__reaction" title="pepeheart">
+                    <img class="chatlog__emoji chatlog__emoji--small" alt="pepeheart" src="Example guild - Text Channels - general [1012224565567721552].json_Files\957847614120566886-60C74.png" loading="lazy">
+                    <span class="chatlog__reaction-count">1</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927108362289223" class="chatlog__message-container " data-message-id="1060927108362289223">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:25">14:25</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927108362289223">06-Jan-23 02:25 PM</a></span>
+            </div>
+
+
+            
+
+            
+                <div class="chatlog__attachment " >
+                    
+                    <a href="Example guild - Text Channels - general [1012224565567721552].json_Files\wat_gif_upload-13948.gif">
+                        <img class="chatlog__attachment-media" src="Example guild - Text Channels - general [1012224565567721552].json_Files\wat_gif_upload-13948.gif" alt="Image attachment" title="Image: wat_gif_upload.gif (173165 Bytes)" loading="lazy">
+                    </a>
+
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927140842983534" class="chatlog__message-container " data-message-id="1060927140842983534">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\90eac3a7ee39906829377a0e43403f0-0E126.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:25">14:25</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Patrick" data-user-id="627848643557663699">Patrick</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927140842983534">06-Jan-23 02:25 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve"><a href="https://tenor.com/view/magic-gif-26166638">https://tenor.com/view/magic-gif-26166638</a></span>
+                    
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__embed">
+                <div class="chatlog__embed-color-pill chatlog__embed-color-pill--default"></div>
+                <div class="chatlog__embed-content-container">
+                    <div class="chatlog__embed-content">
+                        <div class="chatlog__embed-text">
+                            
+                            
+                            
+                            <div class="chatlog__embed-fields">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="chatlog__embed-thumbnail-container">
+                            <a class="chatlog__embed-thumbnail-link" href="Example guild - Text Channels - general [1012224565567721552].json_Files\magic-1ED77.jpg">
+                                <img class="chatlog__embed-thumbnail" src="Example guild - Text Channels - general [1012224565567721552].json_Files\magic-1ED77.jpg" alt="Thumbnail" loading="lazy">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="chatlog__embed-images ">
+                        
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927205481402388" class="chatlog__message-container " data-message-id="1060927205481402388">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:25">14:25</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927205481402388">06-Jan-23 02:25 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Have you seen this impressive book scanner?</span>
+                    
+                </div>
+
+
+            
+                <div class="chatlog__attachment " >
+                    
+                    <video class="chatlog__attachment-media" controls>
+                        <source src="Example guild - Text Channels - general [1012224565567721552].json_Files\book_scanner-A1380.mp4" alt="Video attachment" title="Video: book_scanner.mp4 (324598 Bytes)">
+                    </video>
+
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927254248558702" class="chatlog__message-container " data-message-id="1060927254248558702">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:26">14:26</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927254248558702">06-Jan-23 02:26 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">My computer right now</span>
+                    
+                </div>
+
+
+            
+                <div class="chatlog__attachment " >
+                    
+                    <audio class="chatlog__attachment-media" controls>
+                        <source src="Example guild - Text Channels - general [1012224565567721552].json_Files\funny_noises-55354.mp3" alt="Audio attachment" title="Audio: funny_noises.mp3 (172422 Bytes)">
+                    </audio>
+
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+                <div class="chatlog__reaction" title="kekw">
+                    <img class="chatlog__emoji chatlog__emoji--small" alt="kekw" src="Example guild - Text Channels - general [1012224565567721552].json_Files\831489696621805568-3D82D.png" loading="lazy">
+                    <span class="chatlog__reaction-count">2</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927310439657532" class="chatlog__message-container " data-message-id="1060927310439657532">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:26">14:26</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927310439657532">06-Jan-23 02:26 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">@Thomas that is a little bit off topic, let me create a thread for you 🙂</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927310439657577" class="chatlog__message-container " data-message-id="1060927310439657577">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            <svg class="chatlog__system-notification-icon">
+                <use href="thread-icon"></use>
+            </svg>
+        </div>
+        <div class="chatlog__message-primary">
+            <span class="chatlog__system-notification-author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+
+            <span> </span>
+
+            <span class="chatlog__system-notification-content">
+
+                
+                <span>started a thread.</span>        
+
+
+            </span>
+
+            <span class="chatlog__system-notification-timestamp">
+                        <a href="#chatlog__message-container-1060927310439657577">06-Jan-23 02:26 PM</a>
+            </span>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927794248425564" class="chatlog__message-container " data-message-id="1060927794248425564">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\90eac3a7ee39906829377a0e43403f0-0E126.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:28">14:28</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Patrick" data-user-id="627848643557663699">Patrick</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927794248425564">06-Jan-23 02:28 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">I see, <em>DiscordChatExporter-frontend</em> supports all kinds of asset types like pictures, stickers, emojis, videos, audio, gifs, website embeds and attachments</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927841149132840" class="chatlog__message-container " data-message-id="1060927841149132840">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:28">14:28</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927841149132840">06-Jan-23 02:28 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">And the guild chat is organised neatly to categories, channels and threads without the need to open multiple export files!</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927916252332082" class="chatlog__message-container " data-message-id="1060927916252332082">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\90eac3a7ee39906829377a0e43403f0-0E126.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:28">14:28</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Patrick" data-user-id="627848643557663699">Patrick</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927916252332082">06-Jan-23 02:28 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">me right now</span>
+                    
+                </div>
+
+
+            
+                <div class="chatlog__attachment chatlog__attachment--hidden" onclick="showSpoiler(event, this)">
+                    
+                    <div class="chatlog__attachment-spoiler-caption">SPOILER</div>
+
+                    <a href="Example guild - Text Channels - general [1012224565567721552].json_Files\SPOILER_memes_traffic-5ADA6.png">
+                        <img class="chatlog__attachment-media" src="Example guild - Text Channels - general [1012224565567721552].json_Files\SPOILER_memes_traffic-5ADA6.png" alt="Image attachment" title="Image: SPOILER_memes_traffic.png (88075 Bytes)" loading="lazy">
+                    </a>
+
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060927977254293595" class="chatlog__message-container " data-message-id="1060927977254293595">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:29">14:29</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060927977254293595">06-Jan-23 02:29 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Impressive stuff. One day I will learn how to code</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060928036398174332" class="chatlog__message-container " data-message-id="1060928036398174332">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:29">14:29</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060928036398174332">06-Jan-23 02:29 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">You can start learning Python 3 as your first language. This is how you would write &quot;Hello World!&quot;. 
+<code class="chatlog__markdown-pre chatlog__markdown-pre--multiline language-python">def main():
+    print(&quot;Hello World!&quot;)
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060928071600975873" class="chatlog__message-container " data-message-id="1060928071600975873">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\edbf2b88ff450491f793b1637e1620f4-E5912.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:29">14:29</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Thomas" data-user-id="896568767994532880">Thomas</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060928071600975873">06-Jan-23 02:29 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve"><span class="chatlog__markdown-spoiler chatlog__markdown-spoiler--hidden" onclick="showSpoiler(event, this)">EZ</span>, thanks :pepeheart:</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060928105851658280" class="chatlog__message-container " data-message-id="1060928105851658280">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\90eac3a7ee39906829377a0e43403f0-0E126.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:29">14:29</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Patrick" data-user-id="627848643557663699">Patrick</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060928105851658280">06-Jan-23 02:29 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">My old exports are in HTML :pepefloorcry:</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+                <div class="chatlog__reaction" title="pepefloorcry">
+                    <img class="chatlog__emoji chatlog__emoji--small" alt="pepefloorcry" src="Example guild - Text Channels - general [1012224565567721552].json_Files\561215115159691286-7100E.png" loading="lazy">
+                    <span class="chatlog__reaction-count">1</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060928127137747084" class="chatlog__message-container " data-message-id="1060928127137747084">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="14:29">14:29</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060928127137747084">06-Jan-23 02:29 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">I feel your loss.</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060928127137747087" class="chatlog__message-container " data-message-id="1060928127137747087">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\41ffe1a8ee39906828367a0e42541e1-0F999.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:02">16:02</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="aLittleSpammyBot" data-user-id="521486476985321458">RICK NITRO</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060928127137747087">06-Jan-23 04:02 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Joined the server.</span>
+                    
+                </div>
+
+
+            
+
+            
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="chatlog__message-container-1060928127137747099" class="chatlog__message-container " data-message-id="1060928127137747099">
+    <div class="chatlog__message">    
+        
+        <div class="chatlog__message-aside">
+            
+            
+            <img class="chatlog__avatar" src="Example guild - Text Channels - general [1012224565567721552].json_Files\468d47ade5d888a482e227a04c54eabe-8B00F.png" alt="Avatar" loading="lazy">
+<div class="chatlog__short-timestamp" title="16:05">16:05</div>
+        </div>
+
+        <div class="chatlog__message-primary">
+            
+            
+
+            <div class="chatlog__header">
+
+                <span class="chatlog__author" style="" title="Adam" data-user-id="521486476985155645">Adam</span>
+                
+                <span class="chatlog__timestamp"><a href="#chatlog__message-container-1060928127137747099">06-Jan-23 04:05 PM</a></span>
+            </div>
+
+
+            
+                <div class="chatlog__content chatlog__markdown">
+                    <span class="chatlog__markdown-preserve">Anyway that&#x27;s all. If you find this project useful, please consider starring ⭐ it on GitHub.
+
+And if you have any issues, please report them to issue tracker: <a href="https://github.com/slatinsky/DiscordChatExporter-frontend/issues">https://github.com/slatinsky/DiscordChatExporter-frontend/issues</a>
+
+To remove this example guild, simply delete the folder <code class="chatlog__markdown-pre chatlog__markdown-pre--inline">exports/example_guild</code>.
+
+Thanks for using DiscordChatExporter-frontend!</span>
+                    
+                </div>
+
+
+            
+
+            
+            <div class="chatlog__embed">
+                <div class="chatlog__embed-color-pill" style="background-color: #1E2327"></div>
+                <div class="chatlog__embed-content-container">
+                    <div class="chatlog__embed-content">
+                        <div class="chatlog__embed-text">
+                            
+                            
+                            <div class="chatlog__embed-title">
+                                
+                                <a class="chatlog__embed-title-link" href="https://github.com/slatinsky/DiscordChatExporter-frontend/issues">
+                                    <div class="chatlog__markdown chatlog__markdown-preserve">Issues · slatinsky/DiscordChatExporter-frontend</div>
+                                </a>
+
+                            </div>
+
+                            
+                            <div class="chatlog__embed-description">
+                                <div class="chatlog__markdown chatlog__markdown-preserve">Browse json files exported by Tyrrrz/DiscordChatExporter in familiar discord like user interface - Issues · slatinsky/DiscordChatExporter-frontend</div>
+                            </div>
+
+                            <div class="chatlog__embed-fields">
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="chatlog__embed-thumbnail-container">
+                            <a class="chatlog__embed-thumbnail-link" href="Example guild - Text Channels - general [1012224565567721552].json_Files\DiscordChatExporter-frontend-7F220">
+                                <img class="chatlog__embed-thumbnail" src="Example guild - Text Channels - general [1012224565567721552].json_Files\DiscordChatExporter-frontend-7F220" alt="Thumbnail" loading="lazy">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="chatlog__embed-images ">
+                        
+                    </div>
+
+                    
+
+                </div>
+            </div>
+
+
+            
+            <div class="chatlog__reactions">
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+</body>
+</html>

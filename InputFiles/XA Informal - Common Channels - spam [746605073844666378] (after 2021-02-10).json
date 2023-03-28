@@ -1,0 +1,1683 @@
+{
+  "guild": {
+    "id": "746604912695050300",
+    "name": "XA Informal",
+    "iconUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\7dc2431df19f5299319cfe7b8682b68f-35550.png"
+  },
+  "channel": {
+    "id": "746605073844666378",
+    "type": "GuildTextChat",
+    "categoryId": "746604912695050301",
+    "category": "Common Channels",
+    "name": "spam",
+    "topic": null
+  },
+  "dateRange": {
+    "after": "2021-02-10T20:49:34.94+05:30",
+    "before": null
+  },
+  "messages": [
+    {
+      "id": "852863116463177779",
+      "type": "Default",
+      "timestamp": "2021-06-11T10:53:32.395+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "<a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780><a:ablobparty:755144512816283780>",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894766304941211719",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:01:51.052+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "j timer 950",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894766306769903627",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:01:51.488+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I don't think i can go over 10 minutes",
+      "author": {
+        "id": "870932828504866816",
+        "name": "JsM",
+        "discriminator": "7932",
+        "nickname": "JsM",
+        "color": null,
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\87ba6bb22742872c31fb4827c84dff5e-8A04C.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894766312155402240",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:01:52.772+00:00",
+      "timestampEdited": "2021-10-05T02:36:52.117+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Ended!!",
+      "author": {
+        "id": "870932828504866816",
+        "name": "JsM",
+        "discriminator": "7932",
+        "nickname": "JsM",
+        "color": null,
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\87ba6bb22742872c31fb4827c84dff5e-8A04C.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894766369407635487",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:02:06.422+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "j timer 3600",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894766371165061160",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:02:06.841+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "I don't think i can go over 10 minutes",
+      "author": {
+        "id": "870932828504866816",
+        "name": "JsM",
+        "discriminator": "7932",
+        "nickname": "JsM",
+        "color": null,
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\87ba6bb22742872c31fb4827c84dff5e-8A04C.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894770488142872617",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:18:28.405+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pls vote",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894770489032060989",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:18:28.617+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "270904126974590976",
+        "name": "Dank Memer",
+        "discriminator": "5192",
+        "nickname": "Dank Memer",
+        "color": "#E4B400",
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a38cf47e5d952bc82bedb9c328725278-BAD60.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Vote for Dank Memer",
+          "url": null,
+          "timestamp": null,
+          "description": "",
+          "thumbnail": {
+            "url": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\ballot-box-with-ballot_1f5f3-535E4.png",
+            "width": 240,
+            "height": 240
+          },
+          "images": [],
+          "fields": [
+            {
+              "name": "Rewards",
+              "value": "<:banknote:830509316888985621> Banknote `x3`\n<a:DailyBoxClosed:861390900219478037> Daily Box `x1`\n<:memecoin:573151610847363085> Coins `⏣ 50,000`",
+              "isInline": false
+            }
+          ]
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894775118990020659",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:36:52.485+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "<@!713276935064649792>, Your timer has been ended!! <:878769021967802430:891373727978233897>",
+      "author": {
+        "id": "870932828504866816",
+        "name": "JsM",
+        "discriminator": "7932",
+        "nickname": "JsM",
+        "color": null,
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\87ba6bb22742872c31fb4827c84dff5e-8A04C.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "713276935064649792",
+          "name": "jsmsj",
+          "discriminator": "5252",
+          "nickname": "jsmsj",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+        }
+      ]
+    },
+    {
+      "id": "894775238888419368",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:37:21.071+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "j c 25*60",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894775241291739156",
+      "type": "Reply",
+      "timestamp": "2021-10-05T02:37:21.644+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "1500",
+      "author": {
+        "id": "870932828504866816",
+        "name": "JsM",
+        "discriminator": "7932",
+        "nickname": "JsM",
+        "color": null,
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\87ba6bb22742872c31fb4827c84dff5e-8A04C.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "713276935064649792",
+          "name": "jsmsj",
+          "discriminator": "5252",
+          "nickname": "jsmsj",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+        }
+      ],
+      "reference": {
+        "messageId": "894775238888419368",
+        "channelId": "746605073844666378",
+        "guildId": "746604912695050300"
+      }
+    },
+    {
+      "id": "894775258698113104",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:37:25.794+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "$cdn 1500",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894775258995896322",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:37:25.865+00:00",
+      "timestampEdited": "2021-10-05T03:02:26.163+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "Alien invasion imminent.",
+      "author": {
+        "id": "432610292342587392",
+        "name": "Mudae",
+        "discriminator": "0807",
+        "nickname": "Pallavi chaiwali",
+        "color": "#E4B400",
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\29cb28fbf65a3958105026ab03abd306-F50A9.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894775352482734110",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:37:48.154+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "j ping",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894775354458247178",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:37:48.625+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "<:wandapog:891373728074698803> Pong! Latency is 295 ms",
+      "author": {
+        "id": "870932828504866816",
+        "name": "JsM",
+        "discriminator": "7932",
+        "nickname": "JsM",
+        "color": null,
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\87ba6bb22742872c31fb4827c84dff5e-8A04C.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894775373424918528",
+      "type": "Default",
+      "timestamp": "2021-10-05T02:37:53.147+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "j time",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894775378638430208",
+      "type": "Reply",
+      "timestamp": "2021-10-05T02:37:54.39+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "870932828504866816",
+        "name": "JsM",
+        "discriminator": "7932",
+        "nickname": "JsM",
+        "color": null,
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\87ba6bb22742872c31fb4827c84dff5e-8A04C.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "Error!!!",
+          "url": null,
+          "timestamp": null,
+          "description": "Command not found.",
+          "color": "#2ECC71",
+          "images": [],
+          "fields": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "713276935064649792",
+          "name": "jsmsj",
+          "discriminator": "5252",
+          "nickname": "jsmsj",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+        }
+      ],
+      "reference": {
+        "messageId": "894775373424918528",
+        "channelId": "746605073844666378",
+        "guildId": "746604912695050300"
+      }
+    },
+    {
+      "id": "894787227249418270",
+      "type": "Default",
+      "timestamp": "2021-10-05T03:24:59.319+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pls work",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894787234681724948",
+      "type": "Default",
+      "timestamp": "2021-10-05T03:25:01.091+00:00",
+      "timestampEdited": "2021-10-05T03:25:02.726+00:00",
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**Work for Santa Claus** - Soccer - Hit the ball!\n:goal::goal::goal:\n              :levitate:\n\n       ⚽",
+      "author": {
+        "id": "270904126974590976",
+        "name": "Dank Memer",
+        "discriminator": "5192",
+        "nickname": "Dank Memer",
+        "color": "#E4B400",
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a38cf47e5d952bc82bedb9c328725278-BAD60.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894787241971441684",
+      "type": "Reply",
+      "timestamp": "2021-10-05T03:25:02.829+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "270904126974590976",
+        "name": "Dank Memer",
+        "discriminator": "5192",
+        "nickname": "Dank Memer",
+        "color": "#E4B400",
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a38cf47e5d952bc82bedb9c328725278-BAD60.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": null,
+          "timestamp": null,
+          "description": "**TERRIBLE work!**\nYou lost the mini-game because the goalkeeper was at the goal you kicked the ball in.\nYou were given `⏣ 9,667` for a sub-par hour of work.",
+          "color": "#E53935",
+          "footer": {
+            "text": "Working as a Santa Claus"
+          },
+          "images": [],
+          "fields": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "713276935064649792",
+          "name": "jsmsj",
+          "discriminator": "5252",
+          "nickname": "jsmsj",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+        }
+      ],
+      "reference": {
+        "messageId": "894787227249418270",
+        "channelId": "746605073844666378",
+        "guildId": "746604912695050300"
+      }
+    },
+    {
+      "id": "894787255791648778",
+      "type": "Default",
+      "timestamp": "2021-10-05T03:25:06.124+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pls dep max",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894787266541654066",
+      "type": "Reply",
+      "timestamp": "2021-10-05T03:25:08.687+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "**⏣ 9,668** deposited, current bank balance is **⏣ 1,322,609**.",
+      "author": {
+        "id": "270904126974590976",
+        "name": "Dank Memer",
+        "discriminator": "5192",
+        "nickname": "Dank Memer",
+        "color": "#E4B400",
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a38cf47e5d952bc82bedb9c328725278-BAD60.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "713276935064649792",
+          "name": "jsmsj",
+          "discriminator": "5252",
+          "nickname": "jsmsj",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+        }
+      ],
+      "reference": {
+        "messageId": "894787255791648778",
+        "channelId": "746605073844666378",
+        "guildId": "746604912695050300"
+      }
+    },
+    {
+      "id": "894787309826899978",
+      "type": "Default",
+      "timestamp": "2021-10-05T03:25:19.007+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pls daily",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "894787310586060830",
+      "type": "Reply",
+      "timestamp": "2021-10-05T03:25:19.188+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "270904126974590976",
+        "name": "Dank Memer",
+        "discriminator": "5192",
+        "nickname": "Dank Memer",
+        "color": "#E4B400",
+        "isBot": true,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a38cf47e5d952bc82bedb9c328725278-BAD60.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "You've already claimed your daily today",
+          "url": null,
+          "timestamp": null,
+          "description": "Your next daily is ready in:\n**20 hours, 34 minutes and 40 seconds**",
+          "footer": {
+            "text": "Daily Resets at 00:00 UTC"
+          },
+          "images": [],
+          "fields": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": [
+        {
+          "id": "713276935064649792",
+          "name": "jsmsj",
+          "discriminator": "5252",
+          "nickname": "jsmsj",
+          "color": "#1ABC9C",
+          "isBot": false,
+          "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+        }
+      ],
+      "reference": {
+        "messageId": "894787309826899978",
+        "channelId": "746605073844666378",
+        "guildId": "746604912695050300"
+      }
+    },
+    {
+      "id": "930323022634696705",
+      "type": "Default",
+      "timestamp": "2022-01-11T04:51:33.162+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930323036547186739",
+      "type": "Default",
+      "timestamp": "2022-01-11T04:51:36.479+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930325722864685087",
+      "type": "Default",
+      "timestamp": "2022-01-11T05:02:16.947+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "YMM]",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930325731043573760",
+      "type": "Default",
+      "timestamp": "2022-01-11T05:02:18.897+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "HMM",
+      "author": {
+        "id": "713276935064649792",
+        "name": "jsmsj",
+        "discriminator": "5252",
+        "nickname": "jsmsj",
+        "color": "#1ABC9C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\f8f739623f520a46d7cdd8f480c7ecc2-3FB3F.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930342622982180925",
+      "type": "Default",
+      "timestamp": "2022-01-11T06:09:26.249+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930342626115321937",
+      "type": "Default",
+      "timestamp": "2022-01-11T06:09:26.996+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930342628556415006",
+      "type": "Default",
+      "timestamp": "2022-01-11T06:09:27.578+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930342630888464394",
+      "type": "Default",
+      "timestamp": "2022-01-11T06:09:28.134+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930342636517212160",
+      "type": "Default",
+      "timestamp": "2022-01-11T06:09:29.476+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517201478373386",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:43:09.006+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "...",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517296714219570",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:43:31.712+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i was testing a new feature in discord",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517388032610355",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:43:53.484+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "a send button in the chatbox",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517473420267530",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:44:13.842+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [
+        {
+          "id": "930517473172807740",
+          "url": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\unknown-DD8B9.png",
+          "fileName": "unknown.png",
+          "fileSizeBytes": 92044
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517557750931456",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:44:33.948+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [
+        {
+          "id": "930517557469933588",
+          "url": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\unknown-B398A.png",
+          "fileName": "unknown.png",
+          "fileSizeBytes": 14849
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517603452076073",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:44:44.844+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [
+        {
+          "id": "930517603313668136",
+          "url": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\unknown-8E4DE.png",
+          "fileName": "unknown.png",
+          "fileSizeBytes": 3805
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517638977814608",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:44:53.314+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "wow",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517688499986533",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:05.121+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i dont get it",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517696787918878",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:07.097+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "but i didnt know what to type at that time",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517745131479080",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:18.623+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "i could only think of 'e'",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517758494519366",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:21.809+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517802178215946",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:32.224+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "so i thought i would test it in an appropriate channel",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517809740513372",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:34.027+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "u chose wise",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517815469936710",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:35.393+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "e",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517824676450304",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:37.588+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "or it would be even weirder",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517884206190632",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:51.781+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "for everyone else",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517917580267561",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:45:59.738+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "https://cdn.discordapp.com/emojis/787285729730363443.gif?size=48",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "",
+          "url": "https://cdn.discordapp.com/emojis/787285729730363443.gif?size=48",
+          "timestamp": null,
+          "description": "",
+          "thumbnail": {
+            "url": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\787285729730363443-6D6EA.gif",
+            "width": 48,
+            "height": 46
+          },
+          "images": [],
+          "fields": []
+        }
+      ],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930517993149046904",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:46:17.755+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "anyways i wonder what's the point of introducing this feature now?",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518031770193943",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:46:26.963+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it's such an important button",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518078914170901",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:46:38.203+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "it's in whatsapp too",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518218727112735",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:47:11.537+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "um",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518264176607343",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:47:22.373+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "you are saying contradictory sentences",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518429767712819",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:48:01.853+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "in fact it's in the mobile version as well",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [
+        {
+          "id": "930518429897724014",
+          "url": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\Screenshot_20220111-2317282-B280E.png",
+          "fileName": "Screenshot_20220111-2317282.png",
+          "fileSizeBytes": 18012
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518592359895091",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:48:40.618+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "why wasnt the send button already in the desktop version of discord from the start?",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518775030251610",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:49:24.17+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "what if someone wants to add a line break in their message using 'enter' and don't know how to send a message with 'enter + shift'",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518910766293002",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:49:56.532+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "also this",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [
+        {
+          "id": "930518910581764116",
+          "url": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\unknown-C85B0.png",
+          "fileName": "unknown.png",
+          "fileSizeBytes": 26757
+        }
+      ],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518942286479420",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:50:04.047+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "search bar to find friends",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930518973898965052",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:50:11.584+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "pretty sure it wasnt there before",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930519103557496902",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:50:42.497+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "so?",
+      "author": {
+        "id": "723482337362575482",
+        "name": "jolo",
+        "discriminator": "6929",
+        "nickname": "jolo",
+        "color": "#E91E63",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\e3863ca8be0034d3fed924cdd1efd0a1-96B8A.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930519183341551656",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:51:01.519+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "just some new features added silently",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    },
+    {
+      "id": "930519228828778507",
+      "type": "Default",
+      "timestamp": "2022-01-11T17:51:12.364+00:00",
+      "timestampEdited": null,
+      "callEndedTimestamp": null,
+      "isPinned": false,
+      "content": "one of which should had been there from the beginning",
+      "author": {
+        "id": "746643335833190443",
+        "name": "Flothaboss1000",
+        "discriminator": "4590",
+        "nickname": "Flothaboss1000",
+        "color": "#E74C3C",
+        "isBot": false,
+        "avatarUrl": "XA Informal - Common Channels - spam [746605073844666378] (after 2021-02-10).json_Files\\a071b0ec7ac76a5b5df715618d0e9357-8DAC6.png"
+      },
+      "attachments": [],
+      "embeds": [],
+      "stickers": [],
+      "reactions": [],
+      "mentions": []
+    }
+  ],
+  "messageCount": 64
+}
