@@ -120,31 +120,31 @@
 }
 
 @font-face {
-	src: url(/fonts/whitney-300.woff);
+	src: url(whitney-300);
 	font-family: Whitney;
 	font-weight: 300
 }
 
 @font-face {
-	src: url(/fonts/whitney-400.woff);
+	src: url(whitney-400);
 	font-family: Whitney;
 	font-weight: 400
 }
 
 @font-face {
-	src: url(/fonts/whitney-500.woff);
+	src: url(whitney-500);
 	font-family: Whitney;
 	font-weight: 500
 }
 
 @font-face {
-	src: url(/fonts/whitney-600.woff);
+	src: url(whitney-600);
 	font-family: Whitney;
 	font-weight: 600
 }
 
 @font-face {
-	src: url(/fonts/whitney-700.woff);
+	src: url(whitney-700);
 	font-family: Whitney;
 	font-weight: 700
 }
@@ -153,70 +153,70 @@
 	font-family: "gg sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url(/fonts/ggsans-normal-400.woff2) format("woff2")
+	src: url(ggsans-normal-400) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: italic;
 	font-weight: 400;
-	src: url(/fonts/ggsans-italic-400.woff2) format("woff2")
+	src: url(ggsans-italic-400) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: normal;
 	font-weight: 500;
-	src: url(/fonts/ggsans-normal-500.woff2) format("woff2")
+	src: url(ggsans-normal-500) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: italic;
 	font-weight: 500;
-	src: url(/fonts/ggsans-italic-500.woff2) format("woff2")
+	src: url(ggsans-italic-500) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: normal;
 	font-weight: 600;
-	src: url(/fonts/ggsans-normal-600.woff2) format("woff2")
+	src: url(ggsans-normal-600) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: italic;
 	font-weight: 600;
-	src: url(/fonts/ggsans-italic-600.woff2) format("woff2")
+	src: url(ggsans-italic-600) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url(/fonts/ggsans-normal-700.woff2) format("woff2")
+	src: url(ggsans-normal-700) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: italic;
 	font-weight: 700;
-	src: url(/fonts/ggsans-italic-700.woff2) format("woff2")
+	src: url(ggsans-italic-700) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: normal;
 	font-weight: 800;
-	src: url(/fonts/ggsans-normal-800.woff2) format("woff2")
+	src: url(ggsans-normal-800) format("woff2")
 }
 
 @font-face {
 	font-family: "gg sans";
 	font-style: italic;
 	font-weight: 800;
-	src: url(/fonts/ggsans-italic-800.woff2) format("woff2")
+	src: url(ggsans-italic-800) format("woff2")
 }
 
 

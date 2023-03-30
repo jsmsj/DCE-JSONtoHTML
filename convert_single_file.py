@@ -5,7 +5,7 @@ from discord_markdown_ast_parser import parse_to_dict,parse
 from discord_markdown_ast_parser.parser import Node,NodeType
 import html
 import re
-import uuid
+import uuid,requests
 
 
 anim_emoji_patt = re.compile(r'<a:(\w+):(\d{17,20})>')
@@ -760,6 +760,30 @@ guild_name = json_data['guild']['name']
 guild_iconurl = json_data['guild']['iconUrl']
 channel_category = json_data['channel']['category']
 channel_name = json_data['channel']['name']
+
+
+try:
+    style_css = requests.get('https://raw.githubusercontent.com/jsmsj/DCE-JSONtoHTML/master/style.css').text
+except:
+    with open('style.css','w') as f:
+        style_css = f.read()
+
+pattern_ggsans = re.compile(r'(ggsans)-(italic|normal)-(400|500|600|700|800)')
+pattern_whitney = re.compile(r'(whitney)-(300|400|500|600|700)')
+
+style_css_temp = style_css
+
+matches_ggsans = pattern_ggsans.findall(style_css)
+for match in matches_ggsans:
+    style_css_temp = style_css.replace(f'{match[0]}-{match[1]}-{match[2]}',f'https://raw.githubusercontent.com/jsmsj/DCE-JSONtoHTML/master/fonts/{match[0]}-{match[1]}-{match[2]}.woff2')
+
+matches_whitney = pattern_whitney.findall(style_css)
+for match in matches_whitney:
+    style_css_temp = style_css_temp.replace(f'{match[0]}-{match[1]}',f'https://raw.githubusercontent.com/jsmsj/DCE-JSONtoHTML/master/fonts/{match[0]}-{match[1]}.woff')
+
+
+style_css = style_css_temp
+
 with open(f'InputFiles/{name_of_file_to_load}.html','w') as m:
     m.write("""<!DOCTYPE html>
 <html lang="en" data-theme="dark">
@@ -768,7 +792,10 @@ with open(f'InputFiles/{name_of_file_to_load}.html','w') as m:
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    """)
+    m.write(f'<style>{style_css}</style>')
+    del style_css
+    m.write("""
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-dark.min.css>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js></script>
     <script>document.addEventListener('DOMContentLoaded', () => { document.querySelectorAll('.chatlog__markdown-pre--multiline').forEach(e => hljs.highlightBlock(e)); });</script>
